@@ -15,10 +15,10 @@ export const pool = new Pool({
 */
 //external url de render
 exports.pool = new pg_1.Pool({
-    user: 'davidmillan',
+    user: 'davipharmauser',
     host: 'dpg-ckuhmr237rbc738ccnq0-a.oregon-postgres.render.com',
-    password: 'D3zujgTZLkwBCPSowXCPzLBqFAEi27m8',
-    database: 'menusdb',
+    password: 'K8U4wWiBUMWl1YhRJJ1OLG4CRDHucTjy',
+    database: 'pharmadb_lbjg',
     port: 5432,
     ssl: true
 });
