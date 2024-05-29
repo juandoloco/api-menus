@@ -14,10 +14,11 @@ const database_1 = require("../database");
 //no olvides ponerles try, catch
 const getTiendasXcercania = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     let query = 'SELECT *' +
-        'FROM tiendas ' +
-        'INNER JOIN ubicaciones ' +
-        'ON tiendas.id_tienda =ubicaciones.id_tp ' +
-        'WHERE ST_DWithin(ubicaciones.xy, ST_SetSRID(ST_MakePoint(-99.67688542843177, 19.28662076007736), 4326), 0.10);';
+        'FROM sede ' //+
+    //    'INNER JOIN ubicaciones ' +
+      //  'ON tiendas.id_tienda =ubicaciones.id_tp ' +
+        //'WHERE ST_DWithin(ubicaciones.xy, ST_SetSRID(ST_MakePoint(-99.67688542843177, 19.28662076007736), 4326), 0.10);'
+        ;
     try {
         const response = yield database_1.pool.query(query);
         console.log(response.rows);
